@@ -1,2 +1,4 @@
 if __name__ == '__main__':
-    print("consize api")
+    import os
+    
+    os.system("uvicorn app.infrastructure.frameworks.fastapi:app --host 0.0.0.0")
