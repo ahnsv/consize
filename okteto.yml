@@ -1,0 +1,10 @@
+name: consize-chart
+command: bash
+volumes:
+- /root/.cache/pip
+sync:
+- ./api:/app/consize-api
+forward:
+- 8000:8000
+reverse:
+- 9000:9000

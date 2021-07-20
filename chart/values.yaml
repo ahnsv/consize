@@ -13,6 +13,7 @@ image:
 containers:
   port: 8000
 
+
 imagePullSecrets: []
 nameOverride: ""
 fullnameOverride: ""
@@ -42,6 +43,8 @@ securityContext: {}
 service:
   type: ClusterIP
   port: 80
+  annotations: 
+    dev.okteto.com/auto-ingress: "true"
 
 ingress:
   enabled: false
